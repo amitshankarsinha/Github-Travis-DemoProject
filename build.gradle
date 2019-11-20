@@ -14,10 +14,9 @@ dependencies {
   compile 'com.google.guava:guava:18.0'
 }
 
-task sourcesJar(type: Jar, dependsOn: classes) {
-    classifier = 'sources'
+task sourcesJar(type: Jar, dependsOn: classes) {    
     from sourceSets.main.allSource
-    baseName = 'myjarname'
+    baseName = 'githubTravisIntregration'
 }
 
 task javadocJar(type: Jar, dependsOn: javadoc) {
