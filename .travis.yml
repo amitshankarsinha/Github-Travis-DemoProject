@@ -12,8 +12,8 @@ script:
 deploy:
   provider: releases
   user: "amitshankarsinha"
-  password: "semister#1"
-  file: "myjarname.jar"
+  password: "semister#123"
+  file: "build/libs/githubTravisIntregration.jar"
   skip_cleanup: true
   on:
     tags: false
