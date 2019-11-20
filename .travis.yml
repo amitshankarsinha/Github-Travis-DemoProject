@@ -7,3 +7,13 @@ before_script:
   - chmod +x gradlew
 script:
   - ./gradlew build --stacktrace
+
+deploy:
+  provider: releases
+  user: "amitshankarsinha"
+  password: "semister#1"
+  file: "test.jar"
+  skip_cleanup: true
+  on:
+    tags: false
+    branch: master
