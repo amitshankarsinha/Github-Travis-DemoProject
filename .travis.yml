@@ -9,12 +9,14 @@ script:
   - ./gradlew build --stacktrace
   #- ./gradlew jar --stacktrace
 
-#deploy:
-  #provider: releases
+deploy:
+  provider: releases
+  api_key:
+     secure: travis encrypt -r amitshankarsinha/Github-Travis-DemoProject
   #user: ""
   #password: ""
-  #file: "build/libs/githubTravisIntregration.jar"
-  #skip_cleanup: true
-  #on:
-    #tags: false
-    #branch: master
+  file: "build/libs/githubTravisIntregration.jar"
+  skip_cleanup: true
+  on:
+    tags: false
+    branch: master
