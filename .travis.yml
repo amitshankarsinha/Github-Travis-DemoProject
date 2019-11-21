@@ -15,7 +15,7 @@ deploy:
   provider: releases
   #api_key:
    #  secure: travis encrypt -r amitshankarsinha/Github-Travis-DemoProject
-  api_key: $GIT_TOKEN_NEW
+  api_key: $OT
   #user: "amitshankarsinha"
   #password: "semester#123"
   file: "build/libs/githubTravisIntregration.jar"
