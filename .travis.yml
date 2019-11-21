@@ -8,6 +8,7 @@ before_script:
 script:
   - ./gradlew build --stacktrace
   - pwd
+  - cd build/libs
   - ls
   #- ./gradlew jar --stacktrace
 
