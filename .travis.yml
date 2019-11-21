@@ -13,14 +13,12 @@ script:
 
 deploy:
   provider: releases
-  #api_key:
-   #  secure: travis encrypt -r amitshankarsinha/Github-Travis-DemoProject
   api_key: $OT
   #user: "amitshankarsinha"
   #password: "semester#123"
   file: "/home/travis/build/amitshankarsinha/Github-Travis-DemoProject/build/libs/githubTravisIntregration.jar"
   skip_cleanup: true
   on:
-    tags: false
+    tags: true
     branch: master
  
