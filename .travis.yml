@@ -14,10 +14,9 @@ script:
 deploy:
   provider: releases
   api_key: $OT
-  #user: "amitshankarsinha"
-  #password: "semester#123"
   file: "/home/travis/build/amitshankarsinha/Github-Travis-DemoProject/build/libs/githubTravisIntregration.jar"
   skip_cleanup: true
+  name: Github-Travis-Integration v$(date +'%d.%m.%Y')
   on:
     tags: true
     branch: master
