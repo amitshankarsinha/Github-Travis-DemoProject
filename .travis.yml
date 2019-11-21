@@ -9,13 +9,12 @@ script:
   - ./gradlew build --stacktrace
   #- ./gradlew jar --stacktrace
 
-deploy:
-  provider: releases
-  user: "amishankarsinha"
-  password: "semester#1"
+#deploy:
+  #provider: releases
+  #user: ""
+  #password: ""
   #file: "build/libs/githubTravisIntregration.jar"
-  file: "githubTravisIntregration.jar"
-  skip_cleanup: true
-  on:
-    tags: false
-    branch: master
+  #skip_cleanup: true
+  #on:
+    #tags: false
+    #branch: master
