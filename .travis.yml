@@ -16,8 +16,8 @@ deploy:
   #api_key:
    #  secure: travis encrypt -r amitshankarsinha/Github-Travis-DemoProject
   api_key: dbf14021c6350c93f1e3c33c9303155906a86e2e
-  user: "amitshankarsinha"
-  password: "semester#123"
+  #user: "amitshankarsinha"
+  #password: "semester#123"
   file: "build/libs/githubTravisIntregration.jar"
   skip_cleanup: true
   on:
