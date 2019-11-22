@@ -16,8 +16,8 @@ deploy:
   api_key: $OT
   file: "/home/travis/build/amitshankarsinha/Github-Travis-DemoProject/build/libs/githubTravisIntregration.jar"
   skip_cleanup: true
-  name: Github-Travis-Integration
+  name: Github-Travis-Integration-New
   on:
-    tags: false
+    tags: true
     branch: master
  
